@@ -78,3 +78,7 @@ Relationship: panelClosed PNCL <Transition> 3_6908
 		Code: PNCL
   Role: Source <Source>  Object: <State> 3_6165
   Role: Target <Target>  Object: <State> 3_6073
+Relationship:  <Transition> 3_6955
+	Trigger: 
+  Role: Source <Source>  Object: <Reset> 3_6938
+  Role: Target <Target>  Object: <State> 3_6073
