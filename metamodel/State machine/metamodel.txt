@@ -81,9 +81,6 @@ Reset
 Bindings
 ==========================
 Transition
-	Source: Reset
-	Target: Situation
-Transition
 	Source: Situation
 	Target: Situation
 
