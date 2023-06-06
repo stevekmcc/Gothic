@@ -23,10 +23,6 @@ Situation
 	Command: OrderedCollection (Command)
 		A set of commands done within the state.
 		---------------------------------------------
-Reset
-	Reset causing the state machine initialization.
-	---------------------------------------------
-	Events: OrderedCollection (Event)
 
 ==========================
 Relationship Types
@@ -76,6 +72,10 @@ Event
 	Code: String
 		Code is a mandatory field.
 		---------------------------------------------
+Reset
+	Reset causing the state machine initialization.
+	---------------------------------------------
+	Events: OrderedCollection (Event)
 
 ==========================
 Bindings

@@ -10,11 +10,6 @@ Object: doorOpened D1OP <Reset> 3_6938
 	Object: doorOpened D1OP <Event> 3_6932
 		Name: doorOpened
 		Code: D1OP
-Object: testname testcode <Reset> 3_6949
-	Events: testname testcode
-	Object: testname testcode <Event> 3_6943
-		Name: testname
-		Code: testcode
 Object: idle <Situation> 3_6073
 	Name: idle
 	Command: unlockDoor D1UL lockPanel PNLK
