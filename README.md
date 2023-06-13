@@ -6,14 +6,14 @@ Git repository demonstrating 12 different scenarios on how MetaEdit+ supports co
 1. Install MetaEdit+ and ensure you have xterm installed, as the Git use it. 
 
 2. Fork the https://github.com/mccjpt/Gothic repository into your own GitHub (or BitBucket). In your ~/metaedit directory, mkdir git. Add this new directory and your Git account URL (without /Gothic suffix) to a ~/metaedit/.vcsPaths file like this:
-
+```
 gitBaseDir=/home/myuser/metaedit/git
 gitBaseURL=https://github.com/myuser
-
+```
 3. Run the following command to get a local clone of your online repo:
-
+```
 metaedit textForMERL: "_vcsInitClone('Gothic')" logoutAndExit
-
+```
 You'll be prompted for your GitHub/BitBucket password in an xterm, and assuming all goes well you can close the xterm at the end.
 
 4. Start MetaEdit+, login to 'Gothic' repository and open the project. 
