@@ -8,21 +8,23 @@ MetaEdit+ user guide is available at https://metacase.com/support/55/manuals/ an
 
 2. Fork the https://github.com/mccjpt/Gothic repository into your own VCS online. For simplicity, we'll assume your online VCS platform is GitHub and user name there is GITUSER.
 
-3. Create a directory and settings for Git integration. For simplicity, we'll assume your local OS is Linux and user name is OSUSER.
-   - In your MetaEdit+ working directory (by default ~/metaedit), `mkdir git`. 
+3. Create a directory and settings for Git integration. For simplicity, we'll assume your local OS is Windows and user name is OSUSER.
+   - In your MetaEdit+ working directory (by default C:\Users\OSUSER\Documents\MetaEdit+ 5.5), `mkdir git`. 
    - Add this new directory and _your_ GitHub account URL (without /Gothic suffix) to a `.vcsPaths` file in your MetaEdit+ working directory:
 
         ```
-        gitBaseDir=/home/OSUSER/metaedit/git
+        gitBaseDir=C:\Users\OSUSER\Documents\MetaEdit+ 5.5\git
         gitBaseURL=https://github.com/GITUSER
         ```
-4. Make a local clone of your fork. First, if you are on Linux make sure you have xterm installed (the Git integration uses it). Then run the following in a command prompt in your MetaEdit+ working directory:
+4. Make a local clone of your fork. Run the following in a command prompt in your MetaEdit+ working directory, adjusting the location of the MetaEdit+ executable as necessary:
 
     ```
-    metaedit textForMERL: "_vcsInitClone('Gothic')" logoutAndExit
+    set metaedit="C:\Program Files (x86)\MetaEdit+ 5.5\mep55.exe" fileInPatches
+    %metaedit% textForMERL: "_vcsInitClone('Gothic')" logoutAndExit
+    git config -f git\Gothic\.git\config --unset core.sharedRepository
     ```
 
-    You'll be prompted for your GitHub password, and assuming all goes well you can close the terminal at the end.
+    You'll be prompted for your GitHub password, and assuming all goes well you can close the command prompt at the end. (The last line is just to avoid a [bug](https://github.com/git-for-windows/git/issues/3110) in Git for Windows.)
 
 4. Start MetaEdit+, select the 'Gothic' repository and 'Gothic Security' project, and Login. 
 You can now seen the current version where all 12 scenarios been implemented. 
