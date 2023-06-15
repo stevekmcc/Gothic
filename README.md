@@ -6,7 +6,7 @@ Git repository demonstrating 12 different scenarios on how MetaEdit+ supports co
 1. Install MetaEdit+. 
 MetaEdit+ user guide is available at: https://metacase.com/support/55/manuals/ and integration with VCS detailed at https://metacase.com/support/55/manuals/meplus/Mp-3_5.html. If in Linux ensure you have xterm installed, as the Git integration use it. 
 
-2. Fork the https://github.com/mccjpt/Gothic repository into your own GitHub (or BitBucket). In your ~/metaedit directory, mkdir git. Add this new directory and your Git account URL (without /Gothic suffix) to a ~/metaedit/.vcsPaths file like this:
+2. Fork the https://github.com/mccjpt/Gothic repository into your own GitHub (or download repository for other VCS/locally). In your ~/metaedit directory, mkdir git. Add this new directory and your Git account URL (without /Gothic suffix) to a ~/metaedit/.vcsPaths file like this:
 ```
 gitBaseDir=/home/myuser/metaedit/git
 gitBaseURL=https://github.com/myuser
