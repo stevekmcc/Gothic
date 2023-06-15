@@ -29,6 +29,3 @@ To see or conduct any particular scenario, checkout the version for your Git
 
 ## Prerequisites
 MetaEdit+ 5.5 SR1, https://metacase.com/download
-
-## License
-The contents of this Git repository are hereby included under your MetaEdit+ license, as for the metamodels and models supplied with your MetaEdit+. Explicit permission is given to evaluate these contents with the MetaEdit+ functionality for supporting co-evolution of modeling languages, tools and models. 
